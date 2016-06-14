@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>onesignalvueApp</title>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+        var OneSignal = OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "521c1f5e-ada1-4a57-9c11-90cd71099d8a",
+            subdomainName: 'alexbonavila'
+        }]);
+        OneSignal.LOGGING = true;
+    </script>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<app>
+
+    <div class="form-group">
+        <h2>Insert the text of missage:</h2>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="comments" rows="5"></textarea>
+        </div>
+
+        <div class="col-sm-10">
+            <h2>Insert the email:</h2>
+            <input type="email" name="emailtext" id="email" placeholder="exmple@email.com">
+        </div>
+
+        <div class="col-sm-offset-2 col-sm-10">
+            <a href="#" id="subscribe-link">Send Message!</a>
+        </div>
+    </div>
+
+
+</app>
+
+<script>
+    // This example assumes you've already initialized OneSignal
+    function subscribe() {
+        OneSignal.push(["registerForPushNotifications"]);
+        event.preventDefault();
+    }
+    document.getElementById("subscribe-link").addEventListener('click', subscribe);
+    )
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="dist/build.js"></script>
+</body>
+</html>
