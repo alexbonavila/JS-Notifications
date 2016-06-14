@@ -80,7 +80,7 @@ export default {
             // with hot-reload because the reloaded component
             // preserves its current state and we are modifying
             // its initial state.
-            title: 'Onesignal sample',
+            title: 'Onesignal Recuperació',
             newNotification: '',
             notifications: notificationStorage.fetch()
         }
@@ -117,13 +117,13 @@ export default {
         notifyWithAjax: function () {
             $.ajax({
                 type: "POST",
-                url: "https://onesignal.com/api/v1/notifications?app_id=29ef6b21-7909-4f68-ad94-679a6ab5ad7e",
+                url: "https://onesignal.com/api/v1/notifications?app_id=521c1f5e-ada1-4a57-9c11-90cd71099d8a",
                 beforeSend: function (xhr) {
-                    xhr.setRequestHeader('Authorization', 'Basic NGRlMWJkMWUtN2E0Ni00NGFjLTk5MzItYmE5NTcwMmMzOWJm'),
+                    xhr.setRequestHeader('Authorization', 'Basic OTczZjhmMjQtMGU4Yy00ZWNhLThhZWUtNGJlYjdmY2QzNjll'),
                         xhr.setRequestHeader('Content-Type', 'application/json')
                 },
                 data: JSON.stringify({
-                    "app_id": "29ef6b21-7909-4f68-ad94-679a6ab5ad7e",
+                    "app_id": "521c1f5e-ada1-4a57-9c11-90cd71099d8a",
                     "included_segments": ["All"],
                     "data": {"foo": "bar"},
                     "content_available":true,
