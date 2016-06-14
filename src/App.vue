@@ -1,14 +1,18 @@
 <template>
-<div id="app">
-    <hello></hello>
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <onesignal></onesignal>
+    </div>
+    </div>
     </div>
     </template>
 
     <script>
-import Hello from './components/Hello.vue'
+import Onesignal from './components/Onesignal.vue'
 export default {
     components: {
-        Hello
+        Onesignal
     }
 }
 </script>
@@ -16,5 +20,6 @@ export default {
 <style>
 body {
     font-family: Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
 </style>

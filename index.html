@@ -2,55 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>onesignalvueApp</title>
-
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-    <script>
-        var OneSignal = OneSignal || [];
-        OneSignal.push(["init", {
-            appId: "521c1f5e-ada1-4a57-9c11-90cd71099d8a",
-            subdomainName: 'alexbonavila'
-        }]);
-        OneSignal.LOGGING = true;
-    </script>
-
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>pushwoosh_demo</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="bower_components/AdminLTE/dist/css/AdminLTE.css">
 </head>
 <body>
-<app>
-
-    <div class="form-group">
-        <h2>Insert the text of missage:</h2>
-        <div class="col-sm-10">
-            <textarea class="form-control" id="comments" rows="5"></textarea>
-        </div>
-
-        <div class="col-sm-10">
-            <h2>Insert the email:</h2>
-            <input type="email" name="emailtext" id="email" placeholder="exmple@email.com">
-        </div>
-
-        <div class="col-sm-offset-2 col-sm-10">
-            <a href="#" id="subscribe-link">Send Message!</a>
-        </div>
-    </div>
-
-
-</app>
-
-<script>
-    // This example assumes you've already initialized OneSignal
-    function subscribe() {
-        OneSignal.push(["registerForPushNotifications"]);
-        event.preventDefault();
-    }
-    document.getElementById("subscribe-link").addEventListener('click', subscribe);
-    )
-</script>
-
+<app></app>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="bower_components/AdminLTE/dist/js/app.min.js"></script>
+<script src="js/store.js"></script>
 <script src="dist/build.js"></script>
 </body>
 </html>
